@@ -12,5 +12,6 @@ def one_sum_probability():
 def all_sums_probabilities():
     n, f, m = dice_reader()
     print("SUM : Probability")
-    for s, p in probability_range(1, 12, modifier=1).items():
+    for s, p in probability_range(n, f, modifier=m).items():
         print(f"{s} : {round(p * 100, 3)}%")
+
